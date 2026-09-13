@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxe Home Restorations | Luxury Living, Beauty & Style</title>
+<meta name="description" content="Luxe Home Restorations — luxury home décor, hair, nails, outfits, inspiration and curated finds.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+<style>
+:root{--black:#111;--ink:#222;--gold:#c9a24d;--soft:#f7f5f1;--white:#fff;--line:#dfd8cc}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:"DM Sans",sans-serif;background:var(--white)}
+a{text-decoration:none;color:inherit}.top{background:#0d0d0d;color:#fff;padding:12px 5%;font-size:11px;letter-spacing:2px;text-align:center}
+header{position:sticky;top:0;z-index:20;background:rgba(15,15,15,.97);color:#fff;border-bottom:1px solid rgba(201,162,77,.35)}
+.nav{max-width:1250px;margin:auto;min-height:82px;display:flex;align-items:center;gap:30px;padding:10px 28px}
+.logo{min-width:245px}.logo-script{font-family:Parisienne,cursive;color:var(--gold);font-size:38px;line-height:.9}.logo-sub{font-family:"Cormorant Garamond",serif;letter-spacing:4px;font-size:12px;margin-top:6px}.logo-tag{font-size:8px;letter-spacing:2px;color:#aaa;margin-top:4px}
+nav{display:flex;gap:25px;align-items:center;justify-content:center;flex:1}nav a{font-size:11px;letter-spacing:1.8px;color:#eee;padding:30px 0;position:relative}nav a:hover,nav a.active{color:var(--gold)}nav a.active:after{content:"";position:absolute;bottom:18px;left:0;right:0;height:2px;background:var(--gold)}
+.icons{display:flex;gap:14px;color:var(--gold);font-size:17px}.menu{display:none}
+.hero{min-height:650px;position:relative;display:flex;align-items:center;overflow:hidden;background:
+linear-gradient(90deg,rgba(15,15,15,.84) 0%,rgba(15,15,15,.54) 42%,rgba(15,15,15,.08) 72%),
+url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=88") center/cover}
+.hero-inner{max-width:1250px;width:100%;margin:auto;padding:80px 6%;color:white}.eyebrow{font-size:11px;letter-spacing:4px;color:#e9d6a0;margin-bottom:18px}
+h1{font-family:"Cormorant Garamond",serif;font-weight:500;font-size:78px;line-height:.84;margin:0;max-width:650px}.script{font-family:Parisienne,cursive;color:var(--gold);font-size:1.05em}
+.hero p{max-width:570px;font-size:13px;line-height:1.9;color:#eee}.hero .motto{font-family:Parisienne,cursive;font-size:24px;color:#f0dfb4}.btn{display:inline-block;background:var(--gold);color:#111;padding:15px 25px;font-size:11px;font-weight:600;letter-spacing:2px;margin-top:18px}
+.section{padding:75px 5%}.section-head{text-align:center;margin-bottom:38px}.kicker{font-size:10px;letter-spacing:3px;color:#9a7731}.section h2{font-family:"Cormorant Garamond",serif;font-size:48px;font-weight:500;margin:8px 0}.section-head p{max-width:620px;margin:10px auto;color:#777;line-height:1.7;font-size:13px}
+.categories{background:var(--soft)}.grid5{max-width:1250px;margin:auto;display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.tile{height:270px;position:relative;overflow:hidden;background:#ddd}.tile img{width:100%;height:100%;object-fit:cover;transition:.5s}.tile:hover img{transform:scale(1.05)}.tile:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 42%,rgba(0,0,0,.82))}.tile-info{position:absolute;z-index:2;bottom:18px;left:18px;color:#fff}.tile-info small{display:block;color:#e0c77d;font-size:10px;letter-spacing:2px;margin-bottom:6px}.tile-info strong{font-family:"Cormorant Garamond",serif;font-size:25px;font-weight:500}
+.why{background:#151515;color:#fff}.why-inner{max-width:1250px;margin:auto;display:grid;grid-template-columns:1.1fr 3fr 1fr;align-items:center;gap:35px}.why-title{font-family:Parisienne,cursive;color:var(--gold);font-size:54px;line-height:.9}.features{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.feature{border-left:1px solid #4c463b;padding-left:20px}.feature b{display:block;color:#e5d5ae;font-size:10px;letter-spacing:2px;line-height:1.6}.feature span{font-size:25px;color:var(--gold);display:block;margin-bottom:10px}.promise{border-left:1px solid #655b49;padding-left:28px;font-family:"Cormorant Garamond",serif;font-size:29px;line-height:1.05}.promise em{font-family:Parisienne,cursive;color:var(--gold)}
+.collections{background:#fff}.collection-grid{max-width:1250px;margin:auto;display:grid;grid-template-columns:repeat(5,1fr);gap:16px}.collection{border:1px solid var(--line);background:#fff}.collection img{width:100%;height:210px;object-fit:cover}.collection div{padding:17px}.collection span{font-size:9px;letter-spacing:2px;color:#9b7935}.collection h3{font-family:"Cormorant Garamond",serif;font-size:22px;font-weight:500;margin:7px 0}.collection a{font-size:10px;letter-spacing:1px}
+.journal{background:#f3efe7}.journal-grid{max-width:1100px;margin:auto;display:grid;grid-template-columns:1.1fr .9fr;gap:25px}.journal-card{background:#fff;min-height:320px;padding:45px;display:flex;flex-direction:column;justify-content:center}.journal-card img{width:100%;height:320px;object-fit:cover}.journal-card h3{font-family:"Cormorant Garamond",serif;font-size:40px;font-weight:500;margin:10px 0}.journal-card p{color:#777;line-height:1.8;font-size:13px}
+.cta{background:linear-gradient(90deg,rgba(20,20,20,.78),rgba(20,20,20,.18)),url("https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=2200&q=85") center/cover;color:#fff;text-align:center;padding:110px 20px}.cta h2{font-family:"Cormorant Garamond",serif;font-size:58px;font-weight:500;margin:0}.cta .script{font-size:48px}
+footer{background:#0d0d0d;color:#fff;padding:55px 5% 25px}.footer-inner{max-width:1100px;margin:auto;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:45px}.footer-logo{font-family:Parisienne,cursive;color:var(--gold);font-size:42px}.footer p{color:#999;line-height:1.8;font-size:12px}.footer h4{font-size:10px;letter-spacing:2px;color:#e4d3a8}.footer a{display:block;color:#bbb;font-size:12px;margin:11px 0}.copyright{max-width:1100px;margin:35px auto 0;padding-top:18px;border-top:1px solid #2b2b2b;color:#777;font-size:10px;display:flex;justify-content:space-between}
+@media(max-width:950px){nav{display:none}.menu{display:block;margin-left:auto;color:var(--gold);font-size:24px}.icons{display:none}.logo{min-width:0}.grid5,.collection-grid{grid-template-columns:repeat(2,1fr)}.why-inner{grid-template-columns:1fr}.features{grid-template-columns:repeat(2,1fr)}.promise{border-left:0;border-top:1px solid #4c463b;padding:25px 0}.journal-grid{grid-template-columns:1fr}h1{font-size:60px}}
+@media(max-width:600px){.nav{padding:12px 18px}.logo-script{font-size:32px}.hero{min-height:610px}.hero-inner{padding:55px 24px}h1{font-size:53px}.section{padding:55px 20px}.section h2{font-size:39px}.grid5,.collection-grid{grid-template-columns:1fr}.tile{height:230px}.features{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr}.copyright{display:block;line-height:1.8}}
+</style>
+</head>
+<body>
+<div class="top">DREAM • DESIGN • RESTORE • LIVE LUXE</div>
+<header>
+<div class="nav">
+<a class="logo" href="#home"><div class="logo-script">Luxe</div><div class="logo-sub">HOME RESTORATIONS</div><div class="logo-tag">LUXURY LIVING • BEAUTY • STYLE</div></a>
+<nav><a class="active" href="#home">HOME</a><a href="#decor">DECOR</a><a href="#hair">HAIR</a><a href="#nails">NAILS</a><a href="#outfits">OUTFITS</a><a href="#journal">BLOG</a></nav>
+<div class="icons"><span>⌕</span><span>♡</span><span>◌</span></div><div class="menu">☰</div>
+</div>
+</header>
+
+<section class="hero" id="home">
+<div class="hero-inner">
+<div class="eyebrow">WELCOME TO LUXE HOME RESTORATIONS</div>
+<h1>Elevate Your<br><span class="script">Lifestyle</span></h1>
+<p class="motto">Beautiful spaces · confident you · all in one place</p>
+<p>Discover elevated inspiration for your home, your beauty routine and your personal style — with curated ideas, practical finds and digital resources designed to make everyday life feel more beautiful.</p>
+<a class="btn" href="#explore">EXPLORE NOW →</a>
+</div>
+</section>
+
+<section class="section categories" id="explore">
+<div class="section-head"><div class="kicker">EXPLORE THE WORLD OF LUXE</div><h2>Find Your Inspiration</h2><p>One destination for stylish spaces, beauty inspiration and effortless personal style.</p></div>
+<div class="grid5">
+<a class="tile" id="decor" href="#collections"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=85"><div class="tile-info"><small>INSPIRED SPACES</small><strong>Home Decor</strong></div></a>
+<a class="tile" id="hair" href="#collections"><img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=85"><div class="tile-info"><small>BEAUTY</small><strong>Hair</strong></div></a>
+<a class="tile" id="nails" href="#collections"><img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=85"><div class="tile-info"><small>DETAILS MATTER</small><strong>Nails</strong></div></a>
+<a class="tile" id="outfits" href="#collections"><img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=900&q=85"><div class="tile-info"><small>PERSONAL STYLE</small><strong>Outfits</strong></div></a>
+<a class="tile" href="#journal"><img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=900&q=85"><div class="tile-info"><small>READ • PLAN • CREATE</small><strong>Blog</strong></div></a>
+</div>
+</section>
+
+<section class="section why">
+<div class="why-inner">
+<div class="why-title">Why<br>Choose<br>Us?</div>
+<div class="features">
+<div class="feature"><span>⌂</span><b>LUXURY<br>INSPIRATION</b></div>
+<div class="feature"><span>♡</span><b>CURATED<br>PRODUCTS</b></div>
+<div class="feature"><span>✦</span><b>STYLISH<br>& MODERN</b></div>
+<div class="feature"><span>◇</span><b>TRUSTED<br>RECOMMENDATIONS</b></div>
+</div>
+<div class="promise">Because<br><em>you deserve</em><br>the best.</div>
+</div>
+</section>
+
+<section class="section collections" id="collections">
+<div class="section-head"><div class="kicker">CURATED FOR YOU</div><h2>Featured Collections</h2><p>Explore some of the most-loved inspiration from the Luxe Home Restorations world.</p></div>
+<div class="collection-grid">
+<article class="collection"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=85"><div><span>HOME</span><h3>Luxury Bathrooms</h3><a href="#decor">EXPLORE →</a></div></article>
+<article class="collection"><img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=85"><div><span>ORGANIZE</span><h3>Pantry Essentials</h3><a href="#decor">EXPLORE →</a></div></article>
+<article class="collection"><img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=900&q=85"><div><span>BEAUTY</span><h3>Vanity Essentials</h3><a href="#nails">EXPLORE →</a></div></article>
+<article class="collection"><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=85"><div><span>LIFESTYLE</span><h3>Coffee Bar</h3><a href="#decor">EXPLORE →</a></div></article>
+<article class="collection"><img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&w=900&q=85"><div><span>INTERIORS</span><h3>Living Room</h3><a href="#decor">EXPLORE →</a></div></article>
+</div>
+</section>
+
+<section class="section journal" id="journal">
+<div class="section-head"><div class="kicker">THE LUXE JOURNAL</div><h2>Ideas Worth Saving</h2></div>
+<div class="journal-grid">
+<div class="journal-card"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=85"></div>
+<div class="journal-card"><div class="kicker">LATEST INSPIRATION</div><h3>Make your everyday life feel a little more beautiful.</h3><p>From room refreshes and organization ideas to beauty, style and practical finds, discover inspiration you can actually use.</p><a class="btn" href="#collections">READ & EXPLORE →</a></div>
+</div>
+</section>
+
+<section class="cta">
+<div class="kicker">FOLLOW THE JOURNEY</div>
+<h2>Let’s Create a More<br><span class="script">Beautiful Life</span></h2>
+<a class="btn" href="https://www.pinterest.com/luxehomerestorations/" target="_blank">VISIT PINTEREST →</a>
+</section>
+
+<footer>
+<div class="footer-inner">
+<div><div class="footer-logo">Luxe</div><p>Luxury home inspiration, beauty, personal style and curated finds — created to help you live beautifully.</p></div>
+<div><h4>EXPLORE</h4><a href="#decor">Home Decor</a><a href="#hair">Hair</a><a href="#nails">Nails</a><a href="#outfits">Outfits</a><a href="#journal">Blog</a></div>
+<div><h4>SHOP & CONNECT</h4><a href="https://payhip.com/LuxeHomeRestorations" target="_blank">Digital Shop</a><a href="https://www.pinterest.com/luxehomerestorations/" target="_blank">Pinterest</a><a href="#home">Back to Top ↑</a></div>
+</div>
+<div class="copyright"><span>© 2026 Luxe Home Restorations</span><span>Dream • Design • Restore • Live Luxe</span></div>
+</footer>
+</body>
+</html>
