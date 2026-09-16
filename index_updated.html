@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxe Home Restorations</title>
+  <style>
+*{box-sizing:border-box;scroll-behavior:smooth}body{margin:0;font-family:Georgia,"Times New Roman",serif;color:#171717;line-height:1.6}a{text-decoration:none;color:inherit}
+.site-header{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid #e8e2d8;padding:14px 5%;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;flex-direction:column;line-height:1}.brand-script{font-size:20px;font-style:italic;color:#b08a45}.brand-name{font-size:13px;letter-spacing:2px;font-weight:bold}
+nav{display:flex;gap:18px;flex-wrap:wrap}nav a{font:700 11px Arial,sans-serif;letter-spacing:1.2px}
+.hero{min-height:72vh;padding:70px 7%;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:45px;background:#f4f1eb}
+.hero-copy{max-width:650px}.eyebrow{font:700 11px Arial,sans-serif;letter-spacing:2.5px;color:#b08a45}
+h1{font-size:clamp(46px,7vw,82px);line-height:.98;margin:15px 0}h2{font-size:clamp(32px,5vw,52px);line-height:1.1;margin:8px 0 18px}
+.hero-copy>p:not(.eyebrow){font-size:19px;color:#555}.button{display:inline-block;background:#171717;color:#fff;padding:14px 22px;margin-top:12px;font:700 11px Arial,sans-serif;letter-spacing:1.5px}
+.hero-card{min-height:360px;background:linear-gradient(145deg,#242424,#555);display:flex;align-items:flex-end;padding:28px}.hero-placeholder{color:#fff;font:700 14px Arial,sans-serif;letter-spacing:3px}
+.intro,.section{padding:70px 7%;text-align:center}.intro p:last-of-type{max-width:720px;margin:auto;color:#666}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:35px}.card{padding:28px 22px;background:#f7f5f1;border:1px solid #e8e0d3;text-align:left}.card span{font:700 11px Arial;color:#b08a45;letter-spacing:2px}.card h3{font-size:25px;margin:10px 0 7px}.card p{color:#666;margin:0}
+.feature{padding:60px 7%;background:#171717;color:#fff;display:flex;align-items:center;justify-content:space-between;gap:30px}.feature h2{margin:0}.feature .eyebrow{color:#d8b66d}.button.light{background:#fff;color:#171717}
+.collection-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:35px}.collection{min-height:160px;padding:25px;background:#f8f6f2;border:1px solid #e4dacb;text-align:left}.collection h3{font-size:23px;margin:0 0 7px}.collection p{color:#666;margin:0}
+.shop{padding:70px 7%;background:#f2eee6;display:flex;justify-content:space-between;align-items:center;gap:30px}.shop p{max-width:650px;color:#666}
+.journal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:35px;text-align:left}.journal-grid article{padding:28px;border-top:3px solid #b08a45;background:#fafafa}.journal-grid h3{font-size:22px}
+footer{background:#111;color:#fff;padding:45px 7%;display:flex;justify-content:space-between;align-items:center;gap:25px;flex-wrap:wrap}footer p{margin:5px 0;color:#bbb}.footer-links{display:flex;gap:20px;font:700 11px Arial;letter-spacing:1px}
+@media(max-width:800px){.site-header{align-items:flex-start}.hero{grid-template-columns:1fr}.cards,.collection-grid,.journal-grid{grid-template-columns:1fr 1fr}.feature,.shop{flex-direction:column;align-items:flex-start}}
+@media(max-width:520px){nav a{font-size:9px}.cards,.collection-grid,.journal-grid{grid-template-columns:1fr}h1{font-size:48px}}
+</style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-script">The Luxe</span>
+      <span class="brand-name">HOME RESTORATIONS</span>
+    </a>
+    <nav>
+      <a href="#home">HOME</a>
+      <a href="#decor">DECOR</a>
+      <a href="#beauty">HAIR</a>
+      <a href="#beauty">NAILS</a>
+      <a href="#style">OUTFITS</a>
+      <a href="#journal">BLOG</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">LUXURY LIVING • BEAUTY • STYLE</p>
+        <h1>Elevate Your<br><em>Lifestyle.</em></h1>
+        <p>Beautiful spaces. Confident you. All in one place.</p>
+        <a class="button" href="#collections">EXPLORE NOW</a>
+      </div>
+      <div class="hero-card">
+        <div class="hero-placeholder">THE LUXE LADY</div>
+      </div>
+    </section>
+
+    <section class="intro" id="decor">
+      <p class="eyebrow">WELCOME TO THE LUXE</p>
+      <h2>Where beautiful living meets effortless style.</h2>
+      <p>Discover inspiring home décor, beauty ideas, fashion moments and practical finds designed to help you create a life that feels as good as it looks.</p>
+    </section>
+
+    <section class="categories">
+      <article><a href="#collections"><span>01</span><h3>Home</h3><p>Luxury rooms, decorating ideas and beautiful details.</p></a></article>
+      <article><a href="#beauty"><span>02</span><h3>Beauty</h3><p>Hair, nails and self-care inspiration for every mood.</p></a></article>
+      <article><a href="#style"><span>03</span><h3>Style</h3><p>Polished outfits, accessories and feminine elegance.</p></a></article>
+      <article><a href="https://payhip.com/LuxeHomeRestorations" target="_blank" rel="noopener"><span>04</span><h3>Downloads</h3><p>Useful digital products made for everyday life.</p></a></article>
+    </section>
+
+    <section class="feature">
+      <div>
+        <p class="eyebrow">YOUR EVERYDAY DOSE OF BEAUTIFUL</p>
+        <h2>Make ordinary moments feel extraordinary.</h2>
+      </div>
+      <a class="button light" href="#journal">READ THE JOURNAL</a>
+    </section>
+
+    <section class="collections" id="collections">
+      <p class="eyebrow">FEATURED COLLECTIONS</p>
+      <h2>Inspired living, curated for you.</h2>
+      <div class="grid">
+        <div class="collection"><h3>Luxury Bathrooms</h3><p>Refresh your space with elegant details.</p></div>
+        <div class="collection"><h3>Pantry Essentials</h3><p>Organized, beautiful and functional.</p></div>
+        <div class="collection"><h3>Vanity Essentials</h3><p>Create a polished beauty corner.</p></div>
+        <div class="collection"><h3>Coffee Bar</h3><p>Turn your morning routine into a ritual.</p></div>
+        <div class="collection"><h3>Living Room</h3><p>Comfort with a sophisticated finish.</p></div>
+        <div class="collection"><h3>Beauty & Style</h3><p>Hair, nails and outfits worth saving.</p></div>
+      </div>
+    </section>
+
+    <section class="shop" id="style">
+      <div>
+        <p class="eyebrow">DIGITAL DOWNLOADS</p>
+        <h2>Beautifully practical.</h2>
+        <p>Explore printable planners, checklists, guides and lifestyle tools created to make everyday life easier.</p>
+      </div>
+      <a class="button" href="https://payhip.com/LuxeHomeRestorations" target="_blank" rel="noopener">SHOP DOWNLOADS</a>
+    </section>
+
+    <section class="journal" id="journal">
+      <p class="eyebrow">THE LUXE JOURNAL</p>
+      <h2>Ideas worth saving.</h2>
+      <div class="journal-grid">
+        <article><h3>Simple Ways to Elevate Your Home</h3><p>Small styling changes can make a room feel completely different.</p></article>
+        <article><h3>Beauty Ideas for Your Next Look</h3><p>Save-worthy inspiration for hair, nails and effortless polish.</p></article>
+        <article><h3>Creating Your Everyday Luxe</h3><p>Bring more intention and beauty into the routines you already have.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <span class="brand-script">The Luxe</span>
+      <p>Home • Beauty • Style • Everyday Living</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://www.pinterest.com/luxehomerestorations/" target="_blank" rel="noopener">Pinterest</a>
+      <a href="https://payhip.com/LuxeHomeRestorations" target="_blank" rel="noopener">Payhip</a>
+    </div>
+    <p class="copyright">© 2026 Luxe Home Restorations. All rights reserved.</p>
+  </footer>
+</body>
+</html>
